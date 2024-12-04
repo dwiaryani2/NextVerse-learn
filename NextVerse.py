@@ -371,7 +371,7 @@ if selected == 'Cek Kesiapan':
         # Buat kotak container untuk pilihan "Ya" dan "Tidak"
         with st.container():
             # Pilihan Ya atau Tidak yang tampil dalam satu baris
-            pilihan = st.radio('', ('Ya', 'Tidak'), index=None, horizontal=True, key=f"radio_{id_fakta}")
+            pilihan = st.radio(f"Pilihan jawaban", ('Ya', 'Tidak'), index=None, horizontal=True, key=f"radio_{id_fakta}")
 
             # Menambahkan jawaban yang dipilih ke list input_fakta jika memilih 'Ya'
             if pilihan == 'Ya':
